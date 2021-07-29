@@ -1,0 +1,6 @@
+#Basics of python
+#Print function and number addition
+
+print ("Hello World")
+print("hi")
+2+2
