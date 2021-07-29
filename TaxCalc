@@ -1,0 +1,6 @@
+income = 250_000
+lowtaxland_rate = 0.05
+ripoffland_rate = 0.43
+ltax = income*lowtaxland_rate
+rtax = income*ripoffland_rate
+print('Your income is',income,'and you would pay',ltax,'income tax in Lowtaxland or',rtax,'income tax in Ripoffland. You would save',rtax-ltax,'by paying taxes in Lowtaxland!')
