@@ -1,0 +1,11 @@
+while True:
+    ans = int(input('When was Python 1.0 released? '))
+    if ans == 1994:
+        print('Correct!')
+        break
+    elif ans >1994:
+        print('It was earlier than that!')
+        continue
+    elif ans < 1994:
+        print('It was later than that!')
+    
