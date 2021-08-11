@@ -10,8 +10,4 @@ for i in range(len(spendings)):
     else:
         normal+=1
 
-print('Numbers of months with low spendings: {',low,'},','normal spendings:{',normal,'},','high spendings:{',high,'}',sep='')
-'''print('normal spendings:{',normal,'},',sep='')
-print('high spendings:{',high,'},',sep='')
-
-'''
+print('Numbers of months with low spendings: ',low,', ','normal spendings: ',normal,', ','high spendings: ',high,'.',sep="")
