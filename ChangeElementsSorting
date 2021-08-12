@@ -1,0 +1,17 @@
+tc = ['ny','la','lv','txs']
+print(tc)
+tc.sort()
+print(tc)
+tc.sort(reverse=True)
+print(tc)
+print(sorted(tc))
+print(tc)
+
+
+OP
+===
+['ny', 'la', 'lv', 'txs']
+['la', 'lv', 'ny', 'txs']
+['txs', 'ny', 'lv', 'la']
+['la', 'lv', 'ny', 'txs']
+['txs', 'ny', 'lv', 'la']
