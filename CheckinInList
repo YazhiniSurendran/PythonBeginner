@@ -1,0 +1,6 @@
+lst = ['a','b','c','d','e']
+name = input('What is your name? ')
+if name in lst:
+    print('Welcome!')
+else:
+    print('Try again')
