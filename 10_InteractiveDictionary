@@ -1,0 +1,18 @@
+dict = {
+    "mouth": "Mund",
+    "finger": "Finger",
+    "leg": "Bein",
+    "hand": "Hand",
+    "face": "Gesicht",
+    "nose": "Nase"
+}
+word = ''
+while word != 'EXIT':
+    word = input('Enter a word in English or EXIT: ')
+    if word == 'EXIT':
+        print('Bye!')
+        break
+    elif word in dict.keys():
+        print('Translation:',dict[word])
+    else:
+        print('No match!')
