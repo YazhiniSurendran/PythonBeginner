@@ -1,0 +1,11 @@
+def unique(list_arg = []):
+    unq = []
+    for ele in list_arg:
+        if ele not in unq:
+            unq.append(ele)
+
+    return unq
+
+li = [1,1,2,4,5,1]
+res = unique(li)
+print(res)
