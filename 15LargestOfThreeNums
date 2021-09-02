@@ -7,4 +7,6 @@ lrg = num1
 if num2 > lrg: lrg = num2
 if num3 > lrg: lrg = num3
 
+#lrg = max(num1,num2,num3)
+
 print(lrg)
