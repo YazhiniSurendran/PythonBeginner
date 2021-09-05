@@ -1,0 +1,79 @@
+#DefaultInput
+import string
+
+lower = string.ascii_lowercase
+upper = string.ascii_uppercase
+
+var = 'Abc Hi'
+newVar = ''
+newList = []
+
+for i in var:
+    #print(i)
+    if i in lower:
+        #print('lower')
+        newVar += i.upper()
+    elif i in upper:
+        #print('upper')
+        newVar += i.lower()
+    if i == ' ':
+        #print('Space')
+        newVar += ' '
+newList = newVar.split()
+print("before reverse", newList)
+rev = ' '.join(reversed(newList))
+print("reversed",rev)
+
+#print(newVar)
+#print(newList)
+
+
+
+'''#!/bin/python
+
+import math
+import os
+import random
+import re
+import sys
+
+
+#
+# Complete the 'reverse_words_order_and_swap_cases' function below.
+#
+# The function is expected to return a STRING.
+# The function accepts STRING sentence as parameter.
+#
+import string
+
+def reverse_words_order_and_swap_cases(sentence):
+    # Write your code here
+    lower = string.ascii_lowercase
+    upper = string.ascii_uppercase
+    newVar = ' '
+    newList = []
+    
+    
+    for i in sentence:
+        if i in lower:
+            newVar += i.upper()
+        elif i in upper:
+            newVar += i.lower()
+        if i == ' ':
+            newVar += ' '
+    newList =newVar.split()
+    rev = ' '.join(reversed(newList))
+    return rev    
+        
+    
+if __name__ == '__main__':
+    fptr = open(os.environ['OUTPUT_PATH'], 'w')
+
+    sentence = raw_input()
+
+    result = reverse_words_order_and_swap_cases(sentence)
+
+    fptr.write(result + '\n')
+
+    fptr.close()
+'''
