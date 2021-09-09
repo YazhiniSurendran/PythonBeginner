@@ -1,0 +1,33 @@
+'''
+Three dimensional Array
+Hotel Scenario - find the empty room in the hotel
+Building = 3
+Floors on each Building = 15
+Rooms on each Floor = 20
+'''
+
+count = 0
+
+Arr_3d = [[[0 for room in range(20)] for floors in range(15)] for buildings in range(3)]
+#print(Arr_3d)
+#Book room for newlyweds in the second building, on the tenth floor, room 14:
+
+Arr_3d[1][9][13] = True
+print(Arr_3d)
+
+#Release the second room on the fifth floor located in the first building:
+Arr_3d[0][4][1] = False
+print(Arr_3d)
+
+for r in range(19):
+    if Arr_3d[2][14][r] == 0:
+        count += 1
+
+'''
+for r in range(19):
+     if not Arr_3d[2][14][r]:
+     #if Arr[2][14][0] has the value '0' which means it will return False so when the 'not is executed it will be 'if not(False)' which will be True
+     count += 1 
+'''
+
+print(count,'Number of rooms available on the 15th floor of the 3rd building')
