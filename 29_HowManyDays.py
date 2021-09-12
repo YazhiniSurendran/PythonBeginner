@@ -5,12 +5,14 @@ def is_year_leap(year):
         return False
 
 def days_in_month(year, month):
-#
-# Write your new code here.
-#
     lp = is_year_leap(year)
     month_list = [31,28,31,30,31,30,31,31,30,31,30,31]
-    mon1 = [4,6,9,11]
+    if lp and month == 2:
+	return 29
+    else:
+	return month_list[month-1]
+
+   ''' mon1 = [4,6,9,11]
     for mnth in month_list:
         if month > 12:
             return None
@@ -21,7 +23,7 @@ def days_in_month(year, month):
         elif month in mon1:
             return month_list[month-1]
         else:
-            return month_list[month-1]
+            return month_list[month-1]'''
 
 #START OF CUSTOMIZED INTERACTIVE CODE 
 ip =''
