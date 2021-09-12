@@ -13,3 +13,5 @@ Also I went through the FREE course content provided by the Python Institute.
   Link: https://edube.org/study/pe1
 
 That strengthened my foudation in the language. 
+
+File names starting from 18 upto 29 are part of the Lab or code challenges found in Python. The other lab exercises are uploaded in the PythonInstitute Branch alond with exercise numbers
